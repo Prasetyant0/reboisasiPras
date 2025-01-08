@@ -2,7 +2,7 @@ name: Penghijauan Commit
 
 on:
     schedule:
-        - cron: "0 1/4 * * *"
+        - cron: "0 0 1 * * *"
 
 jobs:
     auto_commit:
@@ -31,8 +31,8 @@ jobs:
 
             - name: Commit changes
               run: |
-                  git config --local user.email "seno@siotics.org"
-                  git config --local user.name "Cydnirn"
+                  git config --local user.email "prasetyantotp@gmail.com"
+                  git config --local user.name "Prasetyant0"
                   git add -A
                   git commit -m "feat: Add more seeds"
 
